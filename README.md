@@ -9,7 +9,8 @@
 
 
 ## Need to know more
-> previousElementSibling
+
+### previousElementSibling
 - https://developer.mozilla.org/en-US/docs/Web/API/Element/previousElementSibling
 - Read-only property returns the Element immediately prior to the specified one in its parent's children list, or null if the specified element is the first one in the list.
 `Store.removeBook(e.target.parentElement.previousElementSibling.textContent);`
