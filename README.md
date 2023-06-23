@@ -15,13 +15,13 @@
 `Store.removeBook(e.target.parentElement.previousElementSibling.textContent);`
 
 
-> insertBefore(newNode, referenceNode)
+### insertBefore(newNode, referenceNode)
 - https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore
 - Method of the Node interface inserts a node before a reference node as a child of a specified parent node.
 `container.insertBefore(div, form);`
 
 
-> DOMContentLoaded
+### DOMContentLoaded
 - https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event
 - The DOMContentLoaded event fires when the HTML document has been completely parsed, and all deferred scripts (`<script defer src="…"> and <script type="module">`) have downloaded and executed. 
 - It doesn't wait for other things like images, subframes, and async scripts to finish loading.
@@ -32,7 +32,7 @@
 `document.addEventListener('DOMContentLoaded', UI.displayBooks);`
 
 
-> Splice in forEach()
+### Splice in forEach()
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
 - The splice() method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place. To create a new array with a segment removed and/or replaced without mutating the original array, use toSpliced(). 
 
@@ -42,7 +42,7 @@ books.forEach((book, index) => {
 });
 ```
 
-> setTimeout
+### setTimeout
 - https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
 - The global setTimeout() method sets a timer which executes a function or specified piece of code once the timer expires.
 ``` JavaScript
@@ -58,7 +58,7 @@ setTimeout(functionRef, delay, param1, param2, /* … ,*/ paramN)
 `setTimeout(() => document.querySelector('.alert').remove(), 3000);`
 
 
-> createTextNode()
+### createTextNode()
 - https://developer.mozilla.org/en-US/docs/Web/API/Document/createTextNode
 - This method can be used to escape HTML characters.
 `div.appendChild(document.createTextNode(msg));`
