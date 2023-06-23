@@ -129,8 +129,7 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
     // remove book from UI
     UI.deleteBook(e.target);
 
-    // remove book from store - find out ISBN and set as argument
-    // previousElementSibling : get sibling element in front of me
+    // remove book from store - ISBN as argument
     Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
 
     // show success message
